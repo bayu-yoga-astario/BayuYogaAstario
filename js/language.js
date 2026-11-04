@@ -176,7 +176,7 @@ function applyLanguage(lang) {
     // Update button label
     const langBtn = document.querySelector(".language-toggle");
     if (langBtn) {
-        langBtn.textContent = lang === "id" ? "ID" : "EN";
+        langBtn.innerHTML = `<i class="bi bi-translate"></i> <span class="lang-code">${lang.toUpperCase()}</span>`;
     }
 
     // Update html lang attribute
